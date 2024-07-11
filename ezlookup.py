@@ -59,7 +59,7 @@ def main():
                 cidr_results = nslookup_cidr(input_value)
                 all_results.update(cidr_results)
                 for ip, hostname in cidr_results.items():
-                    print(f"{ip} : ({hostname})")
+                    print(f"{ip} - ({hostname})")
             else:
                 print(f"NSLOOKUP FOR IP: {input_value}")
                 ip_result = nslookup_list([input_value])
