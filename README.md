@@ -4,4 +4,4 @@ sudo git clone https://github.com/grepun/ezlookup.git
 
 sudo python3 (input list of IP/CIDRs) (output file name)
 
-(a worse version of dc's version T_T)
+(a worse version of dc's nslookup T-T;;)
