@@ -41,7 +41,7 @@ def read_inputs_from_file(file_path):
 def write_results_to_file(results, output_file):
     with open(output_file, 'w') as file:
         for ip, hostname in results.items():
-            file.write(f"{ip} : ({hostname})\n")
+            file.write(f"{ip} : {hostname}\n")
 
 def main():
     parser = argparse.ArgumentParser(description='Perform nslookup on a list of IPs or CIDR ranges.')
