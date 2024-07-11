@@ -44,9 +44,9 @@ def write_results_to_file(results, output_file):
             file.write(f"{ip} - {hostname}\n")
 
 def main():
-    parser = argparse.ArgumentParser(description='Perform nslookup on a list of IPs or CIDR ranges.')
-    parser.add_argument('input_file', help='Path to the file containing a list of IPs or CIDR ranges')
-    parser.add_argument('output_file', nargs='?', help='Path to the file to write the output')
+    parser = argparse.ArgumentParser(description='nslookup list of IP/CIDR')
+    parser.add_argument('input_file', help='input path')
+    parser.add_argument('output_file', nargs='?', help='output path')
     args = parser.parse_args()
 
     inputs = read_inputs_from_file(args.input_file)
