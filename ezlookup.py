@@ -59,13 +59,13 @@ def main():
                 cidr_results = nslookup_cidr(input_value)
                 all_results.update(cidr_results)
                 for ip, hostname in cidr_results.items():
-                    print(f"{ip} - ({hostname})")
+                    print(f"{ip} - ({hostname})\n")
             else:
                 print(f"NSLOOKUP FOR IP: {input_value}")
                 ip_result = nslookup_list([input_value])
                 all_results.update(ip_result)
                 for ip, hostname in ip_result.items():
-                    print(f"{ip} : ({hostname})")
+                    print(f"{ip} : ({hostname})\n")
         except ValueError as e:
             print(f"Invalid input '{input_value}': {e}")
 
